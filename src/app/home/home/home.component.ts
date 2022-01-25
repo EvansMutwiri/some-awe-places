@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Place } from 'src/app/models/place.model';
+import { FetchPlaceService } from 'src/app/services/fetch-place.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  placeList: Array<Place> = [];
+
+  constructor(private fetchPlace: FetchPlaceService) {
+    
+  }
 
   ngOnInit(): void {
+    this.fetchPlace.getAllPlaces().subscribe(data => {
+      this.placeList = data;
+    });
   }
 
 }

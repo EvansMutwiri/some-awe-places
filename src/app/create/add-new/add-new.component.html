@@ -1,1 +1,52 @@
-<p>add-new works!</p>
+<body>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>Know a place thats awesome and affordable?</h1>
+                            <p>🌴 For a date maybe? Tell us and we'll meet there 'cause cheap thrills!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-7">
+                        <div class="post-form">
+                            <form >
+                                <div class="form-group">
+                                    <label class="form-label" for="name">The Destination</label>
+                                        <input class="form-control" id="name" type="text"
+                                            placeholder="Enter a destination name" required>
+                                        <div class="alert-danger">
+                                            Name is required
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="description">Description</label>
+                                        <input class="form-control" id="description" type="text"
+                                            placeholder="Tell us about it" minlength="10" required>
+                                        <div class="alert-danger">
+                                            Valid description is required
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="imageUrl">Link to image</label>
+                                        <input class="form-control" id="imageUrl" type="text"
+                                            placeholder="Enter link to a nice image" required/>
+                                        <div class="alert-danger">
+                                            Image link is required
+                                        </div>
+                                </div>
+
+                                <div class="form-btn">
+                                    <button type="submit" class="submit-btn">Add now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
