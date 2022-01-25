@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-md-4 col-md-pull-7">
                         <div class="post-form">
-                            <form >
+                            <form #f="ngForm" (ngSubmit)=f.form.valid && addPlace()>
                                 <div class="form-group">
                                     <label class="form-label" for="name">The Destination</label>
                                         <input class="form-control" id="name" type="text"

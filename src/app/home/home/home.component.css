@@ -1,30 +1,15 @@
-.section {
-	position: relative;
-	height: 100vh;
+body {
+	background: rgba(47, 103, 177, 0.6)
 }
 
-.section .section-center {
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-#booking {
-	font-family: 'Montserrat', sans-serif;
-	background-image: url('https://picsum.photos/400/600?grayscale');
-	background-size: cover;
-	background-position: center;
-}
-
-#booking::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	background: rgba(47, 103, 177, 0.6);
-}
+.card{
+	margin: 5% 0%;
+  }
+  
+  .card-body{
+	margin: 0% 0% 0% 3%;
+	padding: 6% 0%;
+  }
+  #header {
+	background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat ;
+  }  
