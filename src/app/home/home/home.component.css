@@ -1,9 +1,10 @@
 body {
-	background: #cfd8dc;
+	background: #1c2326;
 }
 
 .card{
-  background-color: #90a4ae;
+  background-color: #111517;
+  color: #c3bab5;
 	margin: 5% 0%;
   max-height: 600px;
   overflow: auto;
@@ -14,7 +15,7 @@ body {
 	padding: 6% 0%;
   }
   #header {
-	background: url(https://images.unsplash.com/photo-1415795854641-f4a487a0fdc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat ;
+	background: url(https://picsum.photos/1000/1000/?blur=6) center center / cover no-repeat ;
   }  
   /* mat-progress-spinner {
     position: absolute;

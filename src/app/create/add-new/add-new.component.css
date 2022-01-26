@@ -26,7 +26,7 @@
 	right: 0;
 	bottom: 0;
 	top: 0;
-	background: rgba(47, 103, 177, 0.6);
+	background: rgba(26, 35, 48, 0.6);
 }
 
 .post-form {
@@ -97,7 +97,7 @@
 
 .post-form .form-label {
 	display: inline-block;
-	color: #3e485c;
+	color: #111517;
 	font-weight: 700;
 	margin-bottom: 6px;
 	margin-left: 7px;
