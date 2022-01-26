@@ -13,7 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AddNewComponent implements OnInit {
   place: Place = new Place();
 
-  constructor(private fetchPlace: FetchPlaceService) { }
+  constructor(private fetchPlace: FetchPlaceService, private router: Router, private actRouter: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
@@ -25,10 +25,11 @@ export class AddNewComponent implements OnInit {
 
     this.fetchPlace.addPlace(form.value).subscribe(()=>{
       console.log(form.value);
-      this.fetchPlace.addPlace
+      this.fetchPlace.addPlace;
+      this.router.navigateByUrl('home');
     });
     
-    // this.router.navigateByUrl('/');
+    
   }
 
 }
