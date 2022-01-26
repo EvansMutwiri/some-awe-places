@@ -11,7 +11,6 @@ import { AddNewComponent } from './create/add-new/add-new.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
-import { NetworkInterceptor } from './network.interceptor';
 
 @NgModule({
   declarations: [
@@ -30,11 +29,11 @@ import { NetworkInterceptor } from './network.interceptor';
     MatProgressSpinnerModule
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: NetworkInterceptor,
-      multi: true,
-    },
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: NetworkInterceptor,
+    //   multi: true,
+    // },
   ],
   bootstrap: [AppComponent]
 })
