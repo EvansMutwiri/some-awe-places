@@ -1,1 +1,49 @@
-<p>home works!</p>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
+  </style>
+<body>
+    <section id="header" class="jumbotron text-center" style="height: 30vh; font-family: 'Montserrat', sans-serif;">
+        <h1 class="display-3" style="padding-top: 10%; font-weight: 800;">SomeAwePlaces</h1>
+        <p class="lead" style="padding-bottom: 10%; color: #ffff;">A crowd sourced collection of nice budget friendly places in Nairobi.</p>
+        
+   </section>
+<div class="container" style="height: 100vh;">
+    
+
+    <!-- Card deck -->
+    <div class="card-deck row" >
+
+        
+    
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let place of placeList">
+      <!-- Card -->
+      <div class="card">
+    
+        <!--Card image-->
+        <div class="view overlay">
+          <img class="card-img-top" src="{{ place.imageUrl }}" alt="Card image cap" style="height: 236px;">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+    
+        <!--Card content-->
+        <div class="card-body" style="font-family: 'Zilla Slab', serif;">
+    
+          <!--Title-->
+          <h4 class="card-title">{{ place.name }}</h4>
+          <!--Text-->
+          <p class="card-text">{{ place.description }}</p>
+          
+    
+        </div>
+    
+      </div>
+      <!-- Card -->
+      </div>
+  
+    </div>
+    <!-- Card deck -->
+      
+    </div>
+</body>

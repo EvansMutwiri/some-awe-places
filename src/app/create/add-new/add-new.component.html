@@ -1,1 +1,52 @@
-<p>add-new works!</p>
+<body>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <div class="booking-cta">
+                            <h1>Know a place thats awesome and affordable?</h1>
+                            <p>🌴 For a date maybe? Tell us and we'll meet there 'cause cheap thrills!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-7" >
+                        <div class="post-form" style="background-color: #90a4ae;">
+                            <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">The Destination</label>
+                                        <input class="form-control" id="name" type="text" name="name" [ngModel]="place.name" #name="ngModel"
+                                            placeholder="Enter a destination name" required>
+                                        <div class="alert-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                                            Name is required
+                                        </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="description">Description</label>
+                                        <input class="form-control" id="description" type="text" name="description" [ngModel]="place.description" #description="ngModel"
+                                            placeholder="Tell us about it" minlength="10" required>
+                                        <div class="alert-danger" *ngIf="description.invalid && (description.dirty || description.touched)">
+                                            Valid description is required
+                                        </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="imageUrl">Link to image</label>
+                                        <input class="form-control" id="imageUrl" type="text" name="imageUrl" [ngModel]="place.imageUrl" #imageUrl="ngModel"
+                                            placeholder="Enter link to a nice image" required/>
+                                        <div class="alert-danger" *ngIf="imageUrl.invalid && (imageUrl.dirty || imageUrl.touched)">
+                                            Image link is required
+                                        </div>
+                                </div>
+
+                                <div class="form-btn">
+                                    <button type="submit" class="submit-btn" [disabled]="!myForm.valid" >Add now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
