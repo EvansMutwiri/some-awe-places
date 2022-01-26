@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Place } from 'src/app/models/place.model';
 import { NgForm } from '@angular/forms';
 import { FetchPlaceService } from 'src/app/services/fetch-place.service';
+// import 'rxjs/add/operator/map';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -12,7 +13,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AddNewComponent implements OnInit {
   place: Place = new Place();
 
-  constructor(private fetchPlace: FetchPlaceService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private fetchPlace: FetchPlaceService) { }
 
   ngOnInit(): void {
   }
@@ -22,8 +23,11 @@ export class AddNewComponent implements OnInit {
 
     //create service to store array and manage it
 
-    this.fetchPlace.addPlace(form.value);
-    console.log(form.value)
+    this.fetchPlace.addPlace(form.value).subscribe(()=>{
+      console.log(form.value);
+      this.fetchPlace.addPlace
+    });
+    
     // this.router.navigateByUrl('/');
   }
 

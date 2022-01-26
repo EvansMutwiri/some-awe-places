@@ -9,6 +9,8 @@ import { NotFoundComponent } from './error/not-found/not-found.component';
 import { HomeComponent } from './home/home/home.component';
 import { AddNewComponent } from './create/add-new/add-new.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

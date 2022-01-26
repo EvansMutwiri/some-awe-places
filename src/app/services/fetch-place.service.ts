@@ -16,7 +16,7 @@ export class FetchPlaceService {
   }
 
   addPlace(place: Place): Observable<any> {
-    return this.http.post(API_URL, place);
+    return this.http.post<Place>("https://some-awe-places.herokuapp.com/api/v1/places", place);
   }
 
   deletePlace(place: Place): Observable<any> {

@@ -1,9 +1,12 @@
 body {
-	background: rgba(47, 103, 177, 0.6)
+	background: #cfd8dc
 }
 
 .card{
+  background-color: #90a4ae;
 	margin: 5% 0%;
+  max-height: 600px;
+  overflow: auto;
   }
   
   .card-body{
