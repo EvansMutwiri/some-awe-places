@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home/home.component';
 
 const routes: Routes = [
   //only redirect when the path is exactly blank
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', redirectTo: 'create', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'create', component: AddNewComponent},
   {path: '404', component: NotFoundComponent},
