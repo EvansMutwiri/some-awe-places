@@ -10,14 +10,16 @@ import { HomeComponent } from './home/home/home.component';
 import { AddNewComponent } from './create/add-new/add-new.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HoverHighlightDirective } from './hover-highlight.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     HomeComponent,
-    AddNewComponent
+    AddNewComponent,
+    HoverHighlightDirective
   ],
   imports: [
     BrowserModule,

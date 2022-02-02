@@ -7,17 +7,16 @@
         <p class="lead" style="color: #ffff;">A crowd sourced collection of nice budget friendly places in Nairobi.</p>
         
    </section>
-<div class="container" id="booking" >
     
 
     <!-- Card deck -->
-    <div class="card-deck row" >
+    <div class="card-deck row"  >
 
         
     
-      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let place of placeList">
+      <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let place of placeList" [@listAnim]>
       <!-- Card -->
-      <div class="card">
+      <div class="card" appHoverHighlight>
     
         <!--Card image-->
         <div class="view overlay">
